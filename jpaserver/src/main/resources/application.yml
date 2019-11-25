@@ -1,0 +1,25 @@
+server:
+  port: 8010
+
+spring:
+  application:
+    name: jpaserver
+  datasource:
+    url: jdbc:mysql://localhost:3306/1703e?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    show-sql: true  # 控制台显示SQL
+    hibernate:
+      ddl-auto: update  # 建表策略，正向更新数据库表
+    open-in-view: true   # 避免懒加载异常
+    properties:
+      hibernate.format_sql: true  #格式化sql
+  jackson:
+    date-format: yyyy-MM-dd
+
+eureka:
+  client:
+    fetch-registry: false   #从注册中心拉
+    service-url: # EurekaServer地址
+      defaultZone: http://127.0.0.1:1010/eureka
