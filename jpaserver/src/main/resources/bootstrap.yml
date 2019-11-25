@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: jpaserver
+  cloud:
+    config:
+      uri: http://localhost:7001
+      profile: dev #环境名称
+      label: master

@@ -1,0 +1,9 @@
+server:
+  port: 7001
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          search-paths: config-repo
+          uri: https://github.com/qq954292448/test02.git
