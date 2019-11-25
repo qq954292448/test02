@@ -5,7 +5,7 @@ spring:
   #name: eurekaserver #应用名称
 eureka:
   client:
-    fetch-registry: false #不从注册中心拉取注册表
-    register-with-eureka: false #不将自己注册到注册中心
+    fetch-registry: true #不从注册中心拉取注册表
+    register-with-eureka: true #不将自己注册到注册中心
     service-url:
       defaultZone: http://localhost:1010/eureka
